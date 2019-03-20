@@ -1,0 +1,201 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    .center {
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 35px;
+}
+element.style {
+    visibility: visible;
+}
+.divider{
+    content: "";
+    position: relative;
+    height: 4px;
+    width: 60px;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+
+    background: orange;
+}
+h4 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    padding: 15px;
+    color: #404040;
+}
+.col.s12 p {
+    position:relative;
+    font-size: 17px;
+    font-weight: 400;
+    color: #404040;
+    margin-top: 20px;
+}
+
+.btn{
+margin-top:-214px;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #404040;
+    font-weight: 200;
+    margin: 0 !important;
+    padding-top: 0px;
+}
+h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    padding: 15px;
+    color: #404040;
+}
+.container a {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.review-filtering .review .review-comment {
+    width: 100%;
+    padding: 5px 40px 20px;
+    position: relative;
+    color:white;
+    background: none repeat scroll 0 0 #6c2400;
+
+}
+section#reviews .review-filtering .review .review-comment:after {
+    right: 100%;
+    top: 50%;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+    border-right: 20px solid #6c2400;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    margin-top: -75px;
+    }
+.container{
+width:1000px;
+}
+.review-comment h3 {
+    color: #fff;
+}
+
+h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    }
+    section#reviews .review-filtering .review .review-comment p {
+    font-size: 16px;
+    color: #fff;
+    padding-left: 20px;
+}
+.container .row {
+    margin-left: 1.25rem;
+    margin-right: -.75rem;
+}
+</style>
+     {% load static %}
+      <div class="carousel carousel-slider center">
+    <div class="carousel-item " >
+        <a href="#one!" ><img src="{% static 'images/mehandi1.jpg' %}" width="100%" ></a>
+
+    </div>
+    <div class="carousel-item ">
+          <a href="#two!"><img src="{% static 'images/mehandi2.jpg' %}" width="100%" ></a>
+
+    </div>
+    <div class="carousel-item ">
+        <a href="#three!"><img src="{% static 'images/mehandi3.jpg' %}"></a>
+
+    </div>
+    <div class="carousel-item ">
+        <a href="#four!"><img src="{% static 'images/mehandi4.jpg' %}"width="100%" ></a>
+</div>
+</div>
+
+
+    <div class="center" style="visibility: visible;">
+<h1>Services</h1>
+<div class="divider"></div>
+        <h4>Serving in and around Bay Area and the Central Valley.</h4>
+</div>
+<div class="container">
+    <div class="row" style="margin-top:30px; margin-bottom:30px;">
+        <div class="col s12">
+            <p>I can do Mehndi/Henna for just about any occasion. I Specialize in Bridal Mehndi, Sangeet Parties, Engagements, Baby Showers, Birthday Parties, Ladies Night outs, School Events, Corporate Events and Fundraisers. I love to extend this art form onto cakes and other mediums like wood, glass and candles.</p>
+<p style="text-align: center;"><img class="size-medium wp-image-2650" src="http://www.mehndidesigner.com/New/wp-content/uploads/2014/12/ganesha-neeta-mehndi-240x300.png" alt="Mehndi design Ganesha" width="240" height="300" srcset="http://www.mehndidesigner.com/wp-content/uploads/2014/12/ganesha-neeta-mehndi-240x300.png 240w, http://www.mehndidesigner.com/wp-content/uploads/2014/12/ganesha-neeta-mehndi.png 400w" sizes="(max-width: 240px) 100vw, 240px">
+    <a href="{% url 'service' %}" class="btn btn-primary btn-default btn-red" target="_self">Learn More</a>
+</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col s12">
+<div class="center wow Meet Neeta Sharma animated animated animated" style="visibility: visible;">
+<h1>Meet Neeta Sharma</h1>
+<div class="divider"></div>
+<h3>Self taught Henna/Mehndi artist practicing this art for the over 30 years.</h3>
+</div>
+</div>
+</div>
+
+<p style="text-align: center;">
+    <a href="{% url 'about' %}" class="btn btn-primary btn-default btn-red" target="_self">Learn More About Neeta</a>
+    <img class="size-medium wp-image-2655" src="http://www.mehndidesigner.com/New/wp-content/uploads/2014/12/peacock-neeta-mehndi-240x300.png" alt="Peacock mehndi henna design" width="240" height="300" ></p>
+</div>
+<div class="container">
+<div class="row">
+<div class="col s12">
+<div class="center wow Reviews animated animated animated" style="visibility: visible;">
+<h1>Reviews</h1>
+<div class="divider"></div>
+<h3>Read What The People Are Saying.</h3>
+</div>
+</div>
+</div>
+    <section id="reviews">
+<div class="container" style="margin-bottom:80px;">
+<div class="row">
+<div class="col s12 scrollpoint sp-effect3">
+<div class="review-filtering">
+<div class="review">
+<div class="row">
+<div class="col s3">
+<div class="review-person">
+    <img class="img-responsive wow pulse animated animated" style="width: 150px; height: 150px; visibility: visible;" src="http://www.mehndidesigner.com/wp-content/uploads/2014/12/tina-manteca.png" alt="" width="150" height="150"></div>
+</div>
+<div class="col s8">
+<div class="review-comment" style="visibility: visible; ">
+<h3 style="margin-top:20px;">“After watching Neeta do my friends bridal mehndi, I instantly knew she would have to be the one to do mine when the time arrived! A wonderful, humble, and professional individual all wrapped up in one. Neeta's talent and love for mehndi designs clearly show in her work. I didn't have a specific design in mind except for a few details I liked in her other work, but she was easily able to create something just for  me. It felt so personal and special when she was done with it! Her instructions on caring for the mehndi were easy to follow and I ended up reaching an amazing stain 3 days later-the day of my wedding. I feel fortunate to have had Neeta complete my bridal look.”</h3>
+<p>- Tina - Manteca, CA</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<p style="text-align: center;">
+    <img class="alignnone size-medium wp-image-2661" src="http://www.mehndidesigner.com/New/wp-content/uploads/2014/12/paisley-neeta-mehndi-212x300.png" alt="bridal mehndi design" width="212" height="300" >
+    <a href="{% url 'review' %}" class="btn btn-primary btn-default btn-red" target="_self">Read More Reviews</a>
+
+	</p>
+
+</div>
+
+{% endblock %}

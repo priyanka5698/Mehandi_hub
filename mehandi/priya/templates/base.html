@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <link href="/assets/materialize.css?body=1" media="all" rel="stylesheet" type="text/css" />
+           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.css">
+	   <link media="screen,projection"/>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <style>
+     html,body{
+
+          height:100%;
+          position: relative;
+                  }
+         nav{
+          background-color:white !important;
+           padding: 5px 15px;
+
+        }
+        .main-containers a{
+
+            color: black;
+            text-align: center;
+            font-size:14px
+
+
+        }
+        .side-nav{
+          background-color: pink !important;
+          padding: 5px 30px;
+
+        }
+
+        img#logo.responsive-img, video.responsive-video {
+        max-width: 12%;
+    height: auto;
+    margin-left: 24px;
+    padding: -2px 10px;
+}
+
+        .main-containers {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ color:black
+ padding-bottom: 100px; /* height of your footer */
+}
+.page-footer{
+ color: #fff;
+    background: none repeat scroll 0 0 #222;
+    margin: 0 auto;
+    padding: 50px 0 40px;
+    position: relative;
+    text-align: center;
+
+    font-size: 10px;
+    font-weight: 200;
+    width:100%;
+    margin-top:50px;
+    role="contentinfo";
+
+   }
+   main{
+   padding-top:3px;
+   }
+
+   .site-info p{
+   margin: 0 0 25px;
+   color:white;
+    font-family: 'Titillium Web', sans-serif !important;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    }
+
+
+         </style>
+          <title>{% block title %}Mehandi Designs{% endblock %}</title>
+  </head>
+<body>
+<div class="main-containers">
+<div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+          {% load static %}
+        <a href="{% url 'index' %}"><img class="responsive-img" id="logo" src="{% static "images/logo1.png" %}"/></a>
+        <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'about' %}">ABOUT ME</a></li>
+            <li><a href="{% url 'service' %}">SERVICES</a></li>
+            <li ><a href="{% url 'gallery' %}">GALLERY</a></li>
+            <li ><a href="{% url 'blog' %}">BLOG</a></li>
+            <li ><a href="{% url 'review' %}">REVIEWS</a></li>
+            <li ><a href="{% url 'contact' %}">CONTACT ME</a></li>
+               <li><a href="{% url 'register' %}">RESTUARANT</a></li>
+        </ul>
+
+        <ul class="side-nav" id="mobile-demo">
+
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">ABOUT ME</a></li>
+            <li><a href="{% url 'service' %}">SERVICES</a></li>
+            <li ><a href="{% url 'gallery' %}">GALLERY</a></li>
+            <li ><a href="{% url 'blog' %}">BLOG</a></li>
+            <li ><a href="{% url 'review' %}">REVIEWS</a></li>
+            <li ><a href="{% url 'contact' %}">CONTACT ME</a></li>
+             <li><a href="{% url 'register' %}">RESTUARANT</a></li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+
+
+<footer class="page-footer">
+    <div style="position: relative;   top:-129px;    left: 0;    right:0;    z-index: 1;    pointer-events:none;">
+<svg style="fill:#222; position:relative; left:0;" fill-opacity="1" height="80px" shape-rendering="geometricPrecision" preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%"s>
+  <path d="m0,100l50,-50l50,50l-100,0" stroke-width="0"></path>
+</svg>
+</div>
+
+   <a class="waves-effect waves-light btn-floating social facebook">
+<i class="fa fa-facebook"></i></a>
+   <a class="waves-effect waves-light btn-floating social google">
+<i class="fa fa-google"></i> </a>
+    <a class="waves-effect waves-light btn-floating social flickr">
+<i class="fa fa-flickr"></i></a>
+    <a class="waves-effect waves-light btn-floating social twitter">
+<i class="fa fa-twitter"></i> </a>
+    <a class="waves-effect waves-light btn-floating social linkedin">
+<i class="fa fa-linkedin"></i></a>
+<div class="site-info">
+               <p>© 2015 Neeta Sharma | Mehndi Designer</p>
+    <p>Serving Bay Area, Central Valley and Destinations</p>
+</div>
+;
+
+
+</footer>
+
+
+</div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+ <script>
+ $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+ $(document).ready(function(){
+ $('select').material_select();
+ });
+
+
+
+</script>
+</html>

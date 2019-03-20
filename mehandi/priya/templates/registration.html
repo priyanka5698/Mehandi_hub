@@ -1,0 +1,1117 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    .row{
+    margin-bottom: 16px!important;
+     margin-top:10px;
+    }
+.row .col.s3 {
+    width:50%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+
+}
+h2{
+font-size:32px;
+font-family: Berkshire Swash,cursive;
+}
+.section {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+
+}
+.mb{
+    margin-top: 0!important;
+    }
+.row .col.s6 {
+    width: 50%;
+    margin-left: auto;
+    margin-right:-222px;
+    left: auto;
+    right: auto;
+    margin-top:0px;
+
+
+}
+
+.waves-effect{
+    font-size: 10px;
+    height: 28px;
+    padding: 0 8px;
+    color:orange;
+    }
+.container a{
+ font-size: 13px;
+ height: 28px;
+    padding: 4px 8px;
+    color:orange;
+    font: inherit;
+        font-weight: 500;
+ }
+.btn-small{
+background-color: transparent;
+    border-style: none;
+    }
+    .v-alert {
+    border-radius: 0;
+    color: #fff;
+     display: flex;
+    font-size: 14px;
+    margin: 14px 0px 0px 0px;
+    padding: 16px;
+    position: relative;
+     background-color:green;
+    transition: .3s cubic-bezier(.25,.8,.5,1);
+}
+.v-alert i{
+
+    margin-right:15px;
+    }
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+   color: rgba(0,0,0,.54);
+
+
+}
+.layout.wrap {
+    flex-wrap: wrap;
+}
+.layout.row {
+    flex-direction: row;
+}
+.fill-height {
+    height: 100%;
+}
+.row .col.s12 {
+    width: 90%;
+    margin-left: 18px;
+    left: auto;
+    right: auto;
+    margin-bottom:15px;
+
+}
+.px-3 {
+    padding-left: 16px!important;
+    padding-right: 16px!important;
+}
+.input-field{
+align-items: center;
+    display: flex;
+    position: relative;
+    width: 100%;
+    }
+
+.v-icon{
+ padding-left: 421px!important;
+ align-items: center;
+    display: inline-flex;
+    font-feature-settings: "liga";
+    font-size: 24px;
+    justify-content: center;
+    line-height: 1;
+    transition: .3s cubic-bezier(.25,.8,.5,1);
+    vertical-align: text-bottom;
+
+    margin-top: 4px;
+ }
+ .vicon{
+ color:orange;
+ margin-right:10px;
+ margin-right:10px;
+ }
+ .collapsible-header {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    display: flex;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    line-height: 1.5;
+    padding: 1rem;
+    background-color: #fff;
+
+}
+.collapsible {
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    margin: -1.5rem 0 1rem 0;
+    padding-bottom:0px;
+    background: transparent!important;
+   box-shadow: 0 0 0 0 rgba(0,0,0,.2),0 0 0 0 rgba(0,0,0,.14),0 0 0 0 rgba(0,0,0,.12)!important;
+}
+.row .col.s4 {
+    width: 33.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    margin-right:-77px;
+    margin-top:18px;
+    font-size:13px
+}
+.col.s10 p {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+
+}
+.row .col.s10 {
+    width: 83.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    margin-bottom:10px;
+}
+.col.s4 p {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    color:black;
+    font-weight:400;
+}
+.mb2 {
+     color: rgba(0,0,0,.5);
+     padding-left: 16px!important;
+     }
+.v-table{
+    width: 483px;
+    height: 389px;
+    margin-left: -29px;
+}
+.p2 {
+    padding-top: 8px!important;
+}
+.mb1 {
+    margin-bottom: 4px!important;
+}
+.btn-floating.btn-large i {
+    line-height: 47px;
+    margin-left:-7px;
+}
+.btn-floating.btn-large{
+    background-color:none;
+}
+
+.row .col.s14 {
+    float: left;
+   border-bottom: 1px solid rgba(0,0,0,.12);
+   box-sizing: border-box;
+    padding: 0 .75rem;
+    min-height: 1px;
+    width:482px;
+}
+.collapsible-body{
+ display: block;
+ height: 446.994318px;
+  }
+  .mb-4 {
+    margin-bottom: -2px!important;
+}
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.inline {
+color:black;
+}
+.layout .col.s6{
+ margin-right:-77px;
+ }
+ .row .col.s8 {
+    width: 66.6666666667%;
+    margin-left: 40px;
+    left: auto;
+    right: auto;
+    margin-bottom:4px;
+}
+
+.pt-0 {
+    padding-top: 0!important;
+}
+.v-input__control {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    height: auto;
+    position: relative;
+    width: 100%;
+    height:56px;
+}
+.v-input--radio-group__input {
+    display: flex;
+    width: 100%;
+}
+.layout.wrap {
+    flex-wrap: wrap;
+}
+.layout.row {
+    flex-direction: row;
+}
+.align-center {
+    align-items: center;
+}
+[type="radio"]:checked {
+    position: absolute;
+    opacity: 1;
+    pointer-events: none;
+}
+.pr2{
+font-size:19px;
+margin-right:4px;
+padding:0px 0px 0px 0px;
+}
+.flex.xs12 {
+    flex-basis: 100%;
+    flex-grow: 0;
+
+}
+.v-input {
+    align-items: flex-start;
+    display: flex;
+    flex: 1 1 auto;
+    font-size: 16px;
+    text-align: left;
+}
+.v-input {
+    margin-top: 0!important;
+    padding-top: 0!important;
+}
+.v-input__slot {
+    align-items: center;
+    color: inherit;
+    display: flex;
+    margin-bottom: 0px;
+    min-height: inherit;
+    position: relative;
+    transition: .3s cubic-bezier(.25,.8,.5,1);
+    width: 100%;
+}
+.v-input--radio-group__input {
+    display: flex;
+    width: 100%;
+    height:40px;
+    flex-direction: column;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.radio-wrap {
+    position: relative;
+    flex: 0.5 1 auto!important;
+    max-width: 100%;
+    height:32px;
+}
+.flex {
+    flex: 1 1 auto;
+    max-width: 100%;
+}
+.align-center {
+    align-items: center;
+}
+column .v-input--radio-group__input {
+    flex-direction: column;
+}
+.v-radio {
+    align-items: center;
+    display: flex;
+    height: auto;
+    margin-right: 16px;
+    outline: none;
+}
+.v-input--radio-group .v-radio {
+    margin-bottom: 8px;
+}
+.radio-wrap .single-radio {
+    padding-left: 32px!important;
+}
+.v-input--selection-controls__input {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    color: inherit;
+    display: inline-flex;
+    flex: 0 0 auto;
+    height: 24px;
+    margin-right: 8px;
+    position: relative;
+    transition: color .2s cubic-bezier(.25,.8,.25,1),-webkit-transform .3s cubic-bezier(.25,.8,.25,1);
+    transition: color .2s cubic-bezier(.25,.8,.25,1),transform .3s cubic-bezier(.25,.8,.25,1);
+    transition: color .2s cubic-bezier(.25,.8,.25,1),transform .3s cubic-bezier(.25,.8,.25,1),-webkit-transform .3s cubic-bezier(.25,.8,.25,1);
+    user-select: none;
+    width: 24px;
+}
+.theme--light.v-input:not(.v-input--is-disabled) input{
+    color: rgba(0,0,0,.87);
+}
+[type="radio"]:not(:checked){
+    position: absolute;
+    opacity: 1;
+    width:24px;
+    height:23px;
+    pointer-events: none;
+}
+.v-input--selection-controls__input input {
+    cursor: pointer;
+    user-select: none;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    }
+input {
+    line-height: normal;
+    background-color: transparent;
+    border-style: none;
+     font: inherit;
+     border-radius: 0;
+
+}
+.v-input--selection-controls__ripple {
+    cursor: pointer;
+    height: 48px;
+    left: -12px;
+    position: absolute;
+    top: calc(50% - 24px);
+    transition: inherit;
+    width: 48px;
+}
+.accent--text {
+    color: #efa546 !important;
+    caret-color: #efa546 !important;
+}
+.v-label {
+    font-size: 17px;
+    min-height: 8px;
+    transition: .3s cubic-bezier(.25,.8,.5,1);
+}
+.v-input--selection-controls.v-input .v-label {
+    align-items: center;
+    display: inline-flex;
+    height: auto;
+    top: 0;
+}
+.theme--light.v-label {
+    color: rgba(0,0,0,.54);
+}
+.v-messages {
+    flex: 1 1 auto;
+    font-size: 12px;
+    min-height: 12px;
+    min-width: 1px;
+    position: relative;
+}
+.layout.column {
+    flex-direction: column;
+}
+.primary {
+    background-color: #efa546 !important;
+    border-color: #efa546 !important;
+}
+.v-btn {
+    align-items: center;
+    border-radius: 2px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    font-size: 14px;
+    font-weight: 500;
+    height: 36px;
+    justify-content: center;
+    margin: 6px 8px;
+    min-width: 88px;
+    outline: 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s cubic-bezier(.25,.8,.5,1),color 1ms;
+    user-select: none;
+    vertical-align: middle;
+}
+.v-btn:not(.v-btn--outline).primary{
+color: #fff;
+}
+.v-text-field__slot {
+    display: flex;
+    flex: 1 1 auto;
+    position: relative;
+}
+textarea {
+    background-color: transparent;
+    border-style: none;
+
+}
+.v-textarea textarea {
+    flex: 1 1 auto;
+    line-height: 18px;
+    max-width: 100%;
+    min-height: 32px;
+    outline: none;
+    padding: 7px 0 8px;
+    width: 100%;
+}
+.v-textarea--no-resize textarea {
+    resize: none;
+    margin-top:5px;
+}
+</style>
+
+<div class="container" style="width:1170px">
+<div class="row">
+<div class="col s6 left">
+    <div class="col s3">
+        <h2>Gurkha-Oven</h2>
+        <p class="mb">12 Sheep Market</p>
+        <p>Spalding, PE11 1BE</p>
+    </div>
+    <div class="col s3" style="margin-top:59px">
+        <div class="section">
+            <i class="material-icons">dialer_sip</i>01775712010</div>
+         <div class="section">
+             <i class="material-icons">email</i>info@gurkhaoven.com</div>
+    </div>
+</div>
+
+<div class="col s6 right">
+    <a class="waves-effect waves-light btn-small"><i class="material-icons left">person_outline</i>REGISTER</a>
+<a class="waves-effect waves-light btn-small"><i class="material-icons left">person</i>LOGIN</a>
+</div>
+
+</div>
+    <div class="layout row wrap fill-height">
+        <div class="col s12">
+            <div class="v-alert">
+                <i class="material-icons">warning</i>Preorder now, restaurant is opening again at 22:30</div>
+
+            </div>
+        <div class="col s6">
+
+                <div class="input-field col s12">
+                     <input id="Search" type="text" class="validate">
+          <label for="Search">Search
+              <i aria-hidden="true" class="v-icon material-icons theme--light">search</i></label>
+                        </div>
+             <div class="col s12">
+                <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Veg Starter</div>
+      <div class="collapsible-body">
+          <div class="v-table">
+              <table class="v-datatable">
+
+                  <tbody>
+                  <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">1. Onion Bhaji</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">2 Aloot Chat</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">3. Vegetable Samosa</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">4. Chilli Paneer</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                  </tbody>
+              </table>
+      </div>
+      </div>
+
+    </li>
+                </ul>
+                  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Non-veg Starters</div>
+      <div class="collapsible-body">
+          <div class="v-table">
+              <table class="v-datatable">
+
+                  <tbody>
+                  <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">5. Mo:Mo</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+
+                   <tr class="col s14" >
+                      <td class="col s10">
+                          <p class="mb1 p2">6. Gurkha Mixed Platter</p>
+                          <p class="mb2">mixtures of various stoners - onion bhaji, kathmandu tikka and sheek kebab</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£5.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+
+                  </td>
+
+                  </tr>
+                   <tr class="col s14" >
+                      <td class="col s10">
+                          <p class="mb1 p2">7.  lamb Chops</p>
+                          <p class="mb2">Marinated Lambchops cooked in a cloy oven & ser with salad</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£5.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+
+                  </td>
+
+                  </tr>
+                   <tr class="col s14" >
+                      <td class="col s10">
+                          <p class="mb1 p2">8. Spicy lamb Kidney</p>
+                          <p class="mb2">Lightly spiced lamb kidney pan fried with special herbs</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+
+                  </td>
+
+                  </tr>
+                   <tr class="col s14" >
+                      <td class="col s10">
+                          <p class="mb1 p2">9. Spicy lamb Kidney</p>
+                          <p class="mb2">Lightly spiced lamb kidney pan fried with special herbs</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+
+                  </td>
+
+                  </tr>
+
+
+
+
+
+                  </tbody>
+              </table>
+          </div>
+      </div>
+    </li>
+                </ul>
+                  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Tandoori grill specials</div>
+      <div class="collapsible-body" >
+
+
+      </div>
+    </li>
+                </ul>
+
+ <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Main Course</div>
+      <div class="collapsible-body">
+          <div class="v-table">
+              <table class="v-datatable">
+
+                  <tbody>
+                  <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">1. Onion Bhaji</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">2 Aloot Chat</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">3. Vegetable Samosa</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">4. Chilli Paneer</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                  </tbody>
+              </table>
+      </div>
+      </div>
+
+    </li>
+                </ul>
+
+ <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Gurkha Special Main Course</div>
+      <div class="collapsible-body">
+          <div class="v-table">
+              <table class="v-datatable">
+
+                  <tbody>
+                  <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">1. Onion Bhaji</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">2 Aloot Chat</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">3. Vegetable Samosa</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">4. Chilli Paneer</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                  </tbody>
+              </table>
+      </div>
+      </div>
+
+    </li>
+                </ul>
+                  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Biryani Dishes</div>
+      <div class="collapsible-body">
+          <div class="v-table">
+              <table class="v-datatable">
+
+                  <tbody>
+                  <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">1. Onion Bhaji</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">2 Aloot Chat</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">3. Vegetable Samosa</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">4. Chilli Paneer</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                  </tbody>
+              </table>
+      </div>
+      </div>
+
+    </li>
+                </ul>
+                  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Veg Starter</div>
+      <div class="collapsible-body">
+          <div class="v-table">
+              <table class="v-datatable">
+
+                  <tbody>
+                  <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">1. Onion Bhaji</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">2 Aloot Chat</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">3. Vegetable Samosa</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">4. Chilli Paneer</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                  </tbody>
+              </table>
+      </div>
+      </div>
+
+    </li>
+                </ul>
+                  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Veg Starter</div>
+      <div class="collapsible-body">
+          <div class="v-table">
+              <table class="v-datatable">
+
+                  <tbody>
+                  <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">1. Onion Bhaji</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">2 Aloot Chat</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">3. Vegetable Samosa</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">4. Chilli Paneer</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                  </tbody>
+              </table>
+      </div>
+      </div>
+
+    </li>
+                </ul>
+                  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Veg Starter</div>
+      <div class="collapsible-body">
+          <div class="v-table">
+              <table class="v-datatable">
+
+                  <tbody>
+                  <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">1. Onion Bhaji</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">2 Aloot Chat</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">3. Vegetable Samosa</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                   <tr class="col s14">
+                      <td class="col s10">
+                          <p class="mb1 p2">4. Chilli Paneer</p>
+                          <p class="mb2">Famous traditional Nepalese dumplings mode with chicken mince & various spices served with a special homemade sauce a dish well worth trying!</p>
+                      </td>
+                  <td class="col s4">
+                      <span class="mr-2 price">£4.95</span>
+                      <p>
+                          <i aria-hidden="true" class="vicon material-icons theme--dark add">add</i></p>
+                  </td>
+
+                  </tr>
+                  </tbody>
+              </table>
+      </div>
+      </div>
+
+    </li>
+                </ul>
+
+        </div>
+
+        </div>
+<div class="col s6">
+<div class="layout">
+
+                <div class="input-field col s12">
+                    <div>
+                        <h2 class="mb-4">Shopping basket</h2>
+                    </div>
+                </div>
+    <div class="col s12">
+                        <div class="col s4">
+                            <p class="inline">Delivery method:</p>
+                        </div>
+                        <div class="col s8">
+                            <div class="v-input pt-0 ">
+                                <div class="v-input__control">
+                                    <div class="v-input__slot" style="height: auto;">
+                                        <div role="radiogroup" class="v-input--radio-group__input">
+                                            <div class="layout radio-wrap pt-0 row wrap justify-start align-center">
+                                                <div class="flex" style="height:32px;width:182px;padding-right:0px">
+                                                    <div data-v-3fd12c20="" class="v-radio single-radio theme--light">
+                                                        <div class="v-input--selection-controls__input">
+                                                            <input aria-label="Collection" aria-checked="true" role="radio" type="radio" value="collection" name="v-radio-287">
+                                                            <div class="v-input--selection-controls__ripple"></div>
+                                                            <i aria-hidden="true" class="v-icon material-icons theme--light ">radio_button_checked</i></div>
+                                                        <label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: relative;">Collection</label></div></div>
+                                                <div data-v-3fd12c20="" class="flex" style="float:right;margin-top:-30px">
+                                                    <div data-v-3fd12c20="" class="v-radio single-radio theme--light accent--text">
+                                                        <div class="v-input--selection-controls__input">
+                                                            <input aria-label="Delivery" aria-checked="true" role="radio" type="radio" value="delivery" name="v-radio-287">
+                                                        <div class="v-input--selection-controls__ripple accent--text"></div>
+                                                        <i aria-hidden="true" class="v-icon material-icons theme--light accent--text">radio_button_checked</i></div>
+                                                        <label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: relative;">Delivery</label>
+                                                    </div></div></div></div></div>
+                                    <div class="v-messages theme--light">
+                                        <div class="v-messages__wrapper"></div></div></div></div></div>
+
+
+                            <div data-v-3fd12c20="" class="layout column">
+                                <div data-v-3fd12c20="" class="flex xs12">
+
+                                </div> <button data-v-3fd12c20="" type="submit" class="v-btn theme--light primary" style="width:521px">
+                                <div class="v-btn__content">Preorder</div></button>
+                                <div data-v-3fd12c20="" class="v-input v-textarea v-textarea--auto-grow v-textarea--no-resize v-text-field theme--light">
+                                    <div class="v-input__control">
+                                        <div class="v-input__slot">
+                                            <div class="v-text-field__slot">
+                                                <label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Comment</label><textarea aria-label="Comment" name="comment" rows="1" style="height: 33px;"></textarea></div></div>
+                                        <div class="v-text-field__details"><div class="v-messages theme--light">
+                                            <div class="v-messages__wrapper"></div></div></div></div></div></div>
+
+</div>
+</div>
+</div>
+</div>
+                </div>
+</div>
+</div>
+
+</div>
+
+
+{% endblock %}
